@@ -92,6 +92,7 @@ Be careful with the types
 > x <- my_vector[1:3]
 > x
 [1] "1" "2" "3"
+# due to the fact that my_vector is a multi-type vector
 ```
 You can select by comparing :
 ```
