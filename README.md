@@ -31,4 +31,15 @@ Natural numbers like 4 are called integers. Integers are also numerics.
 Boolean values (TRUE or FALSE) are called logical.
 Text (or string) values are called characters.
 
-you can check the type of a variable with *class()*
+you can check the type of a variable with #class()#
+
+## Vectors : 1D arrays
+they can hold different types
+my_vector <- (1,2,3,"hello",5.25,FALSE)
+you refer to an item with brackets 
+my_vector[4] holds "hello"
+
+### Naming vectors :
+its somethimes easier to refer to vector with labels : use #names()#
+integers_vector = c(1,2,3)
+names(integers_vector) = c("on","two","three")
