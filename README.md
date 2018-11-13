@@ -42,9 +42,17 @@ my_vector[4] holds "hello"
 ### Naming vectors :
 its somethimes easier to refer to vector with labels : use **names()**
 integers_vector = c(1,2,3)
-names(integers_vector) = c("on","two","three")
+names(integers_vector) = c("one","two","three")
+my_vector["two"] holds "2"
+
+> dayNames <- c("Sunday","Monday")
+> days <- c(1,2)
+> names(days) <- dayNames
+> days["Sunday"]
+> 1
 
 ### Operations on vectors :
+#### on every item :
 one_vector <- c(10,20,30)
 another_vector <- c(2)
 one_vector * another_vector holds c(20,40,60)
@@ -52,5 +60,7 @@ one_vector * another_vector holds c(20,40,60)
 third_vector <- c(1,2,3)
 one_vector * third_vector holds c(10,40,90)
 
+#### Summarizing operations :
+total <= sum(one_vector) holds 60
 
 
