@@ -143,3 +143,22 @@ Elsa     12     18
 John     13     10
 Martia   15     13
 ```
+#### Adding a column to the matrix
+```
+> means <- rowMeans(results_matrix)
+> results_matrix <- cbind(results_matrix,means)
+> results_matrix
+       Math French means
+Elsa     12     18  15.0
+John     13     10  11.5
+Martia   15     13  14.0
+```
+```
+> sums <- rowSums(results_matrix)
+> results_matrix <- cbind(results_matrix,sums)
+> results_matrix
+       Math French sums
+Elsa     12     18   30
+John     13     10   23
+Martia   15     13   28
+```
