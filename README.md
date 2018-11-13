@@ -36,8 +36,11 @@ x[2] = 43 gives you an array with 42 and 43
 ## Types :
 extract from the tutorial :
 > Decimal values like 4.5 are called numerics.
+
 > Natural numbers like 4 are called integers. Integers are also numerics.
+
 > Boolean values (TRUE or FALSE) are called logical.
+
 > Text (or string) values are called characters.
 
 you can check the type of a variable with **class()**
