@@ -26,24 +26,22 @@ x[2] = 43 gives you an array with 42 and 43
 
 ## Types :
 extract from the tutorial :
-Decimal values like 4.5 are called numerics.
-Natural numbers like 4 are called integers. Integers are also numerics.
-Boolean values (TRUE or FALSE) are called logical.
-Text (or string) values are called characters.
+> Decimal values like 4.5 are called numerics.
+> Natural numbers like 4 are called integers. Integers are also numerics.
+> Boolean values (TRUE or FALSE) are called logical.
+> Text (or string) values are called characters.
 
 you can check the type of a variable with **class()**
 
 ## Vectors : 1D arrays
 they can hold different types
-my_vector <- (1,2,3,"hello",5.25,FALSE)
 you refer to an item with brackets 
-my_vector[4] holds "hello"
-
+```
+my_vector <- (1,2,3,"hello",5.25,FALSE)
+my_vector[4] # holds "hello"
+```
 ### Naming vectors :
 its somethimes easier to refer to vector with labels : use **names()**
-integers_vector = c(1,2,3)
-names(integers_vector) = c("one","two","three")
-my_vector["two"] holds "2"
 ```
 > dayNames <- c("Sunday","Monday")
 > days <- c(1,2)
@@ -53,14 +51,15 @@ my_vector["two"] holds "2"
 ```
 ### Operations on vectors :
 #### on every item :
+```
 one_vector <- c(10,20,30)
 another_vector <- c(2)
 one_vector * another_vector holds c(20,40,60)
 
 third_vector <- c(1,2,3)
 one_vector * third_vector holds c(10,40,90)
-
+```
 #### Summarizing operations :
-total <= sum(one_vector) holds 60
+`total <= sum(one_vector) holds 60`
 
 
