@@ -43,3 +43,14 @@ my_vector[4] holds "hello"
 its somethimes easier to refer to vector with labels : use **names()**
 integers_vector = c(1,2,3)
 names(integers_vector) = c("on","two","three")
+
+### Operations on vectors :
+one_vector <- c(10,20,30)
+another_vector <- c(2)
+one_vector * another_vector holds c(20,40,60)
+
+third_vector <- c(1,2,3)
+one_vector * third_vector holds c(10,40,90)
+
+
+
