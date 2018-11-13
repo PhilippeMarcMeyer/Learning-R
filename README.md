@@ -60,7 +60,8 @@ third_vector <- c(1,2,3)
 one_vector * third_vector holds c(10,40,90)
 ```
 #### Summarizing operations :
-`total <= sum(one_vector) holds 60`
+`total_result <= sum(one_vector) holds 60`
+`mean_result <= mean(one_vector) holds 20`
 
 ### Vector selection 
 You can get a part of a vector
@@ -77,3 +78,14 @@ Be careful with the types
 > x
 [1] "1" "2" "3"
 ```
+You can select by comparing :
+```
+> my_vector <- c(1,2,3,4,5,6)
+> select_vector <- my_vector >= 4
+> select_vector
+[1] FALSE FALSE FALSE  TRUE  TRUE  TRUE
+> over3_vector = my_vector[select_vector]
+> over3_vector
+[1] 4 5 6
+```
+
