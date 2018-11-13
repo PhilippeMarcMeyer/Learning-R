@@ -37,7 +37,7 @@ you can check the type of a variable with **class()**
 they can hold different types
 you refer to an item with brackets 
 ```
-my_vector <- (1,2,3,"hello",5.25,FALSE)
+my_vector <- c(1,2,3,"hello",5.25,FALSE)
 my_vector[4] # holds "hello"
 ```
 ### Naming vectors :
@@ -62,4 +62,18 @@ one_vector * third_vector holds c(10,40,90)
 #### Summarizing operations :
 `total <= sum(one_vector) holds 60`
 
-
+### Vector selection 
+You can get a part of a vector
+```
+> my_vector <- c(1,2,3,4,5,6)
+> x <- my_vector[1:3]
+> x
+[1] 1 2 3
+```
+Be careful with the types
+```
+> my_vector <- c(1,2,3,"hello",5.25,FALSE)
+> x <- my_vector[1:3]
+> x
+[1] "1" "2" "3"
+```
