@@ -1,6 +1,7 @@
 # Learning-R
 
-In order to be useful I need to be able to analyse occurence of words et large files using R and packageslike tidyverse 
+My goal is to help my daughter in her linguistic studies,
+and be able to analyse occurence of words et large files using R and packageslike tidyverse 
 Let's star with pure R thanks to : https://campus.datacamp.com/courses/free-introduction-to-r
 
 First : install R + R-studio
