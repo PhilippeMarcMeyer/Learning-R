@@ -108,3 +108,22 @@ Reverse order (by columns)
 [3,]    3    7   11
 [4,]    4    8   12
 ```
+#### A collection of vectors
+```
+> x <- c(1,2,3)
+> y <- c(4,5,6)
+> z <- c(7,8,9)
+> 
+> xyz <- c(x,y,z)
+> xyz
+[1] 1 2 3 4 5 6 7 8 9
+> # matrix
+> xyz_matrix <- matrix(xyz,byrow = TRUE,nrow = 3)
+> xyz_matrix
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+[3,]    7    8    9
+```
+a vector of vectors is still a 1D array as you see (xyz)
+but it is convenient to use vectors of the same length, concatenate them in another vector and them fill the matrix with a nrow equal to the number of initial vectors.
