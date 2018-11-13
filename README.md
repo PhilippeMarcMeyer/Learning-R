@@ -127,3 +127,19 @@ Reverse order (by columns)
 ```
 a vector of vectors is still a 1D array as you see (xyz)
 but it is convenient to use vectors of the same length, concatenate them in another vector and them fill the matrix with a nrow equal to the number of initial vectors.
+
+#### Naming row and columns
+```
+> results_math <- c(12,13,15)
+> results_english <- c(18,10,13)
+> candidates <- c("Elsa","John","Martia")
+> subjects <- c("Math","French")
+> results_matrix <- matrix(c(results_math,results_english),nrow=3,byrow=FALSE)
+> rownames(results_matrix) <- candidates
+> colnames(results_matrix) <- subjects
+> results_matrix
+       Math French
+Elsa     12     18
+John     13     10
+Martia   15     13
+```
