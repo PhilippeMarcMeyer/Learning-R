@@ -1,5 +1,4 @@
 # Learning-R
-Learning Language R to help my Daughter
 
 In order to be useful I need to be able to analyse occurence of words et large files using R and packageslike tidyverse 
 Let's star with pure R thanks to : https://campus.datacamp.com/courses/free-introduction-to-r
