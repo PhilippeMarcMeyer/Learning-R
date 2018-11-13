@@ -162,3 +162,31 @@ Elsa     12     18   30
 John     13     10   23
 Martia   15     13   28
 ```
+#### Adding a row to the matrix
+```
+> subjects <- c("Math","French")
+> 
+> results_math_class1 <- c(12.0,13.0,15.0)
+> results_english_class1 <- c(18.0,10.0,13.0)
+> candidates_class1 <- c("Elsa","John","Martia")
+> results_matrix_class1 <- matrix(c(results_math_class1,results_english_class1),nrow=3,byrow=FALSE)
+> 
+> rownames(results_matrix_class1) <- candidates_class1
+> results_math_class2 <- c(16.0,12.0,7.0,17.0)
+> results_english_class2 <- c(12.0,12.5,14.0,17.0)
+> candidates_class2 <- c("Alan","Beatriz","Johan","Sylvia")
+> results_matrix_class2 <- matrix(c(results_math_class2,results_english_class2),nrow=4,byrow=FALSE)
+> rownames(results_matrix_class2) <- candidates_class2
+> 
+> results_matrix <- rbind(results_matrix_class1,results_matrix_class2)
+> colnames(results_matrix) <- subjects
+> results_matrix
+        Math French
+Elsa      12   18.0
+John      13   10.0
+Martia    15   13.0
+Alan      16   12.0
+Beatriz   12   12.5
+Johan      7   14.0
+Sylvia    17   17.0
+```
