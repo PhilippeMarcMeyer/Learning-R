@@ -89,3 +89,13 @@ You can select by comparing :
 [1] 4 5 6
 ```
 
+### Matrix a 2D arrays of items of the same type
+matrix(1:12, byrow = TRUE, nrow = 4)
+```
+> matrix(1:12,byrow=TRUE,nrow=4)
+     [,1] [,2] [,3]
+[1,]    1    2    3
+[2,]    4    5    6
+[3,]    7    8    9
+[4,]   10   11   12
+```
