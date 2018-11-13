@@ -90,7 +90,7 @@ You can select by comparing :
 ```
 
 ### Matrix a 2D arrays of items of the same type
-matrix(1:12, byrow = TRUE, nrow = 4)
+matrix(1:12, byrow = TRUE, nrow = 4) filling way : byrow
 ```
 > matrix(1:12,byrow=TRUE,nrow=4)
      [,1] [,2] [,3]
@@ -98,4 +98,13 @@ matrix(1:12, byrow = TRUE, nrow = 4)
 [2,]    4    5    6
 [3,]    7    8    9
 [4,]   10   11   12
+```
+Reverse order (by columns)
+```
+> matrix(1:12,byrow=FALSE,nrow=4)
+     [,1] [,2] [,3]
+[1,]    1    5    9
+[2,]    2    6   10
+[3,]    3    7   11
+[4,]    4    8   12
 ```
