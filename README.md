@@ -178,7 +178,7 @@ Elsa     12     18   30
 John     13     10   23
 Martia   15     13   28
 ```
-#### Adding a row to the matrix
+#### Adding a row to the matrix by binding 2 matrix
 ```
 > subjects <- c("Math","French")
 > 
