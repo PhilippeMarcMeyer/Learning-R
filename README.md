@@ -44,13 +44,13 @@ its somethimes easier to refer to vector with labels : use **names()**
 integers_vector = c(1,2,3)
 names(integers_vector) = c("one","two","three")
 my_vector["two"] holds "2"
-
+```
 > dayNames <- c("Sunday","Monday")
 > days <- c(1,2)
 > names(days) <- dayNames
 > days["Sunday"]
 > 1
-
+```
 ### Operations on vectors :
 #### on every item :
 one_vector <- c(10,20,30)
