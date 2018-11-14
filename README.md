@@ -228,3 +228,15 @@ If we user levels as a function we get the distinct values :
 > levels(factor_color_vector)
 [1] "blue"   "orange" "red"
 ```
+We can't order the colors and say red is higher than blue like with numbers : that's nominal categorical variables
+
+But with an ordinal categorical variable, ordering makes sense
+
+```
+> # quality
+> quality_vector <- c("Excellent", "Poor", "Average","Astonishing", "Average","Average")
+> factor_quality_vector <- factor(quality_vector, order = TRUE, levels = c("Poor", "Average", "Excellent","Astonishing"))
+> factor_quality_vector
+[1] Excellent   Poor        Average     Astonishing Average     Average    
+Levels: Poor < Average < Excellent < Astonishing
+```
