@@ -240,3 +240,12 @@ But with an ordinal categorical variable, ordering makes sense
 [1] Excellent   Poor        Average     Astonishing Average     Average    
 Levels: Poor < Average < Excellent < Astonishing
 ```
+You can change the level names in your factor vector
+
+That won't change the original vector but the factored vector is the same as the original vector PLUS levels so you will use it instead
+```
+> levels(factor_quality_vector) <- c("low","medium","good","high")
+> factor_quality_vector
+[1] good   low    medium high   medium medium
+Levels: low < medium < good < high
+```
