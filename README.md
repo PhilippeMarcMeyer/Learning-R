@@ -309,4 +309,14 @@ str() is also useful :
  $ rotation: num  58.64 -243.02 1 1.03 0.41 ...
  $ rings   : logi  FALSE FALSE FALSE FALSE TRUE TRUE ...
  ```
- 
+ ### Selections
+You can select parts of a data frame 
+
+planets_df[row,column]
+
+planets_df[1,3] will give you the diameter of Mercury (1st row, third column)
+
+planets_df[1,] will give you the entire line for mercury
+
+planets_df[2:3,1] returns the names of Venus and Earth (rows 2 to 3 and column 1)
+
