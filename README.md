@@ -206,3 +206,25 @@ Beatriz   12   12.5
 Johan      7   14.0
 Sylvia    17   17.0
 ```
+## Factors :
+R distinguishes categorical variables and continuous variable, sometimes refred as discreet and continuous
+Factors are used to store **categorical variables**
+```
+> # color vector
+> color_vector <- c("red", "blue", "red", "orange", "blue")
+> 
+> # Convert color_vector to a factor
+> factor_color_vector <- factor(color_vector)
+> 
+> # Result
+> factor_color_vector
+[1] red    blue   red    orange blue  
+Levels: blue orange red
+```
+I can see factor_color_vector contains the same informations than color_vector PLUS levels
+
+If we user levels as a function we get the distinct values :
+```
+> levels(factor_color_vector)
+[1] "blue"   "orange" "red"
+```
