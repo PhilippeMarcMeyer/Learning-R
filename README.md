@@ -249,9 +249,20 @@ That won't change the original vector but the factored vector is the same as the
 [1] good   low    medium high   medium medium
 Levels: low < medium < good < high
 ```
-####Summarizing a factor
+#### Summarizing a factor
 ```
 > summary(factor_quality_vector)
    low medium   good   high 
      1      3      1      1
+```
+factor vector items may be compared :
+```
+> factor_quality_vector[1]
+[1] good
+Levels: low < medium < good < high
+> factor_quality_vector[2]
+[1] low
+Levels: low < medium < good < high
+> factor_quality_vector[1] > factor_quality_vector[2]
+[1] TRUE
 ```
