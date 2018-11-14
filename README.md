@@ -294,3 +294,19 @@ Here is the example of the tutorial :
 7  Uranus          Gas giant    4.007    -0.72  TRUE
 8 Neptune          Gas giant    3.883     0.67  TRUE
 ```
+### Useful functions :
+If your table holds thousand lines use head() and tail()
+
+head(planets_df) will show an extract of the table starting at the begining and tail() at the end
+
+str() is also useful :
+```
+> str(planets_df)
+'data.frame':	8 obs. of  5 variables:
+ $ name    : Factor w/ 8 levels "Earth","Jupiter",..: 4 8 1 3 2 6 7 5
+ $ type    : Factor w/ 2 levels "Gas giant","Terrestrial planet": 2 2 2 2 1 1 1 1
+ $ diameter: num  0.382 0.949 1 0.532 11.209 ...
+ $ rotation: num  58.64 -243.02 1 1.03 0.41 ...
+ $ rings   : logi  FALSE FALSE FALSE FALSE TRUE TRUE ...
+ ```
+ 
