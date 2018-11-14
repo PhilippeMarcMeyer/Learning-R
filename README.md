@@ -266,3 +266,31 @@ Levels: low < medium < good < high
 > factor_quality_vector[1] > factor_quality_vector[2]
 [1] TRUE
 ```
+## Data Frame
+They are matrix that can hold different types of value
+
+Here is the example of the tutorial :
+```
+> # Create a data frame from the vectors
+> planets_df <- data.frame(name,type,diameter,rotation,rings)
+> # Definition of vectors
+> name <- c("Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+> type <- c("Terrestrial planet", "Terrestrial planet", "Terrestrial planet", 
+            "Terrestrial planet", "Gas giant", "Gas giant", "Gas giant", "Gas giant")
+> diameter <- c(0.382, 0.949, 1, 0.532, 11.209, 9.449, 4.007, 3.883)
+> rotation <- c(58.64, -243.02, 1, 1.03, 0.41, 0.43, -0.72, 0.67)
+> rings <- c(FALSE, FALSE, FALSE, FALSE, TRUE, TRUE, TRUE, TRUE)
+> 
+> # Create a data frame from the vectors
+> planets_df <- data.frame(name,type,diameter,rotation,rings)
+> planets_df
+     name               type diameter rotation rings
+1 Mercury Terrestrial planet    0.382    58.64 FALSE
+2   Venus Terrestrial planet    0.949  -243.02 FALSE
+3   Earth Terrestrial planet    1.000     1.00 FALSE
+4    Mars Terrestrial planet    0.532     1.03 FALSE
+5 Jupiter          Gas giant   11.209     0.41  TRUE
+6  Saturn          Gas giant    9.449     0.43  TRUE
+7  Uranus          Gas giant    4.007    -0.72  TRUE
+8 Neptune          Gas giant    3.883     0.67  TRUE
+```
