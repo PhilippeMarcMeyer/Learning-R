@@ -255,7 +255,7 @@ Levels: low < medium < good < high
    low medium   good   high 
      1      3      1      1
 ```
-factor vector items may be compared :
+factor vector items may be compared : imagine our quality_vector holds the results of tests on 5 products
 ```
 > factor_quality_vector[1]
 [1] good
