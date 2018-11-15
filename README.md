@@ -349,5 +349,11 @@ There is a simpler way of doing it : **subset()**
 ```
 subset(my_df, subset = some_condition)
 ```
-
-
+Planets with a diameter lower than 1 :
+```
+subset(planets_df,diameter < 1)
+```
+Planets with rings :
+```
+subset(planets_df,rings == TRUE)
+```
