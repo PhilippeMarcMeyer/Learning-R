@@ -335,3 +335,14 @@ select the "name" column
 short-cut :
 
 planets_df$name
+
+#### Selecting rows :
+
+##### Using a selector vector
+Select all columns for planets with rings
+```
+rings_vector <- planets_df$rings
+select_vector <- rings_vector == TRUE
+planets_df[select_vector,]
+```
+
