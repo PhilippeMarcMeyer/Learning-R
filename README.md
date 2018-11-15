@@ -345,4 +345,9 @@ rings_vector <- planets_df$rings
 select_vector <- rings_vector == TRUE
 planets_df[select_vector,]
 ```
+There is a simpler way of doing it : **subset()**
+```
+subset(my_df, subset = some_condition)
+```
+
 
