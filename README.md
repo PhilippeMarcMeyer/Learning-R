@@ -5,11 +5,11 @@ My goal is to help my daughter in her linguistic studies,
 and to be able to analyse occurences of words in large files using R and packages like tidyverse.
 
 Let's start with pure R thanks to : https://campus.datacamp.com/courses/free-introduction-to-r
+These are notes taken during the course of this excellent Datacamp free online interactive tutorial
+I write them here to remember them ans share
+But they are useless if you don't take this free course
 
-First : install R + R-studio
-(To follow the datacamp tutorial I just need a browser)
-
-both R-studio and the online tuto povide a console :
+Datacamp online tutorial provides a console :
 
 ## Operators :
 like with any console I can do calculations :
@@ -390,3 +390,19 @@ I realised it can be done with discret vectors if you use **factor()** first
 [6] "Astonishing"
 > 
 ```
+### Sorting DataFrames
+> # Use order() to create positions
+> positions <-  order(planets_df$diameter)
+> 
+> # Use positions to sort planets_df
+> planets_df[positions,]
+     name               type diameter rotation rings
+1 Mercury Terrestrial planet    0.382    58.64 FALSE
+4    Mars Terrestrial planet    0.532     1.03 FALSE
+2   Venus Terrestrial planet    0.949  -243.02 FALSE
+3   Earth Terrestrial planet    1.000     1.00 FALSE
+8 Neptune          Gas giant    3.883     0.67  TRUE
+7  Uranus          Gas giant    4.007    -0.72  TRUE
+6  Saturn          Gas giant    9.449     0.43  TRUE
+5 Jupiter          Gas giant   11.209     0.41  TRUE
+> 
