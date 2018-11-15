@@ -357,3 +357,36 @@ Planets with rings :
 ```
 subset(planets_df,rings == TRUE)
 ```
+## Sorting
+
+order() gets the order of a vector
+
+Ordering a vector :
+```
+> a <- c(12,17,3,22)
+> b <- order(a)
+> a[b]
+[1]  3 12 17 22
+
+# or more simply :
+> a <- c(12,17,3,22)
+> a[order(a)]
+[1]  3 12 17 22
+```
+I realised it can be done with discret vectors if you use **factor()** first
+
+```
+> quality_vector <- c("Excellent", "Poor", "Average","Astonishing", "Average","Average")
+> factor_quality_vector <- factor(quality_vector, order = TRUE, levels = c("Poor", "Average", "Excellent","Astonishing"))
+> order_vector <- order(factor_quality_vector)
+> 
+> sorted_vector <- quality_vector[order_vector]
+> 
+> quality_vector
+[1] "Excellent"   "Poor"        "Average"     "Astonishing" "Average"    
+[6] "Average"
+> sorted_vector
+[1] "Poor"        "Average"     "Average"     "Average"     "Excellent"  
+[6] "Astonishing"
+> 
+```
