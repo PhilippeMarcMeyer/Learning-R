@@ -391,6 +391,7 @@ I realised it can be done with discret vectors if you use **factor()** first
 > 
 ```
 ### Sorting DataFrames
+```
 > # Use order() to create positions
 > positions <-  order(planets_df$diameter)
 > 
@@ -406,3 +407,4 @@ I realised it can be done with discret vectors if you use **factor()** first
 6  Saturn          Gas giant    9.449     0.43  TRUE
 5 Jupiter          Gas giant   11.209     0.41  TRUE
 > 
+```
