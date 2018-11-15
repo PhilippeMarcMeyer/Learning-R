@@ -320,3 +320,18 @@ planets_df[1,] will give you the entire line for mercury
 
 planets_df[2:3,1] returns the names of Venus and Earth (rows 2 to 3 and column 1)
 
+You can also use the variable name :
+
+planets_df[1:5,"name"] returns the names of the 5 first planets
+
+#### Selecting an entire column :
+
+planets_df[,1]
+
+planets_df[,"name"]
+
+select the "name" column 
+
+short-cut :
+
+planets_df$name
