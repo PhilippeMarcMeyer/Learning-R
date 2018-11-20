@@ -422,3 +422,8 @@ aList <- List(item1,item2,item3)
 names(aList) <- c("name1","name2","name3")
 ```
 
+## Praticing :
+
+Trying to master what I have learned
+
+https://philippemarcmeyer.github.io/#rlanguage
