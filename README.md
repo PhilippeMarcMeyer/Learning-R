@@ -408,3 +408,17 @@ I realised it can be done with discret vectors if you use **factor()** first
 5 Jupiter          Gas giant   11.209     0.41  TRUE
 > 
 ```
+
+## Lists
+### They are like super containers holding other components line vectors, data frames, matrices or other lists
+
+Create a list :
+```
+aList <- List(item1,item2,item3)
+```
+Create a named list :
+```
+aList <- List(item1,item2,item3)
+names(aList) <- c("name1","name2","name3")
+```
+
