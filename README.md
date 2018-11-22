@@ -427,3 +427,12 @@ names(aList) <- c("name1","name2","name3")
 Trying to master what I have learned
 
 https://philippemarcmeyer.github.io/#rlanguage
+
+
+## Importing files
+```
+# Read a txt file, named "myText.txt"
+my_data <- read.delim("myText.txt")
+# Read a csv file, named "myText.csv"
+my_data <- read.csv("myText.csv")
+```
