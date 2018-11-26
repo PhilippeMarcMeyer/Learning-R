@@ -1,18 +1,14 @@
-#my_data <- read.csv("myText.csv")
-#my_data <- read.delim(file.choose())
+text<-scan("files/loremipsum.txt", what="character", sep="\n")
+#text<-scan(choose.files(), what="character", sep="\n")
 
-my_data <- read.delim('C:\Webs\Learning-R\files\loremipsum.txt')
+words_list <- strsplit(text, "\\W+", perl=TRUE)
+tolower(words_list[])
 
-
-# We have a dataframe
-# class(my_data) gives me : [1] "data.frame"
-
-# my_data[1,1]  gives me the first ROW (there is only ) corresponding to the first paragraph (or line)
-
-# my_data[1:4,1] or my_data[,1] shows the 4 paragraphs as rows
-
-# naming my chapters
-x <- 0:length(my_data[,1] )
-names <- sprintf("chapter %d",x)
-rownames(my_data) <- c(names)
-
+words_vector <- unlist(words_list)
+nrWords <- length(words_vector)
+df <- data.frame(words = words_vector)
+freq <- table(df$words)
+freq_sorted <-sort(freq,decreasing=TRUE)
+df <-  as.data.frame(freq_sorted)
+df$pc  <- nrWords
+df$pc <- df$Freq / df$pc
