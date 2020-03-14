@@ -1,8 +1,6 @@
 # Learning-R
 
-My goal is to help my daughter in her linguistic studies,
-
-and to be able to analyse occurences of words in large files using R and packages like tidyverse.
+Our goal is to be able to analyse occurences of words in large files using R and packages like tidyverse.
 
 Let's start with pure R thanks to : https://campus.datacamp.com/courses/free-introduction-to-r
 These are notes taken during the course of this excellent Datacamp free online interactive tutorial
